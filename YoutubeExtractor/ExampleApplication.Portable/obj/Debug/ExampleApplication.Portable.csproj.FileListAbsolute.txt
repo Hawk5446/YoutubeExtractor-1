@@ -1,0 +1,10 @@
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\ExampleApplication.Portable.exe.config
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\ExampleApplication.Portable.exe
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\ExampleApplication.Portable.pdb
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\YoutubeExtractor.dll
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\YoutubeExtractor.pdb
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\obj\Debug\ExampleApplication.Portable.csprojResolveAssemblyReference.cache
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\obj\Debug\ExampleApplication.Portable.exe
+C:\Users\David\Documents\GitHub\YoutubeExtractor-1\YoutubeExtractor\ExampleApplication.Portable\obj\Debug\ExampleApplication.Portable.pdb

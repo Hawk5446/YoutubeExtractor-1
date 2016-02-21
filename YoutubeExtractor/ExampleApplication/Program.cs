@@ -88,16 +88,41 @@ namespace ExampleApplication
         private static void Main()
         {
             // Our test youtube link
-            const string link = "http://www.youtube.com/watch?v=O3UBOOZw-FE";
-
+            const string link = "https://www.youtube.com/watch?v=PbgKEjNBHqM&list=PLXNk6B60FKxRku5Eya_GU4hfHLqOUOYKJ";
+            List<string> links = DownloadUrlResolver.ExtractLinks(link);
             /*
              * Get the available video formats.
              * We'll work with them in the video and audio download examples.
              */
-            IEnumerable<VideoInfo> videoInfos = DownloadUrlResolver.GetDownloadUrls(link, false);
-
-            //DownloadAudio(videoInfos);
-            DownloadVideo(videoInfos);
+            IEnumerable<VideoInfo> videoInfos;
+            if (links.Count > 0)
+            {
+                foreach (string s in links)
+                {
+                    try
+                    {
+                        videoInfos = DownloadUrlResolver.GetDownloadUrls(s, false);
+                        DownloadVideo(videoInfos);
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine();
+                        Console.WriteLine(@"Error processing " + s);
+                        Console.WriteLine(e.ToString());
+                        Console.WriteLine();
+                        Console.WriteLine(@"Continue? Y N");
+                        if (Console.ReadKey().Key == ConsoleKey.N)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                videoInfos = DownloadUrlResolver.GetDownloadUrls(link, false);
+                DownloadVideo(videoInfos);
+            }
         }
 
         private static string RemoveIllegalPathCharacters(string path)
